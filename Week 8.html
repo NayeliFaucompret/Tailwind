@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Fonts Overview</title>
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/flexboxes.css">
+  <link rel="stylesheet" href="assets/nav.css">
+</head>
+<div style="position: relative; width: 100%; height: 70vh; background-image: url('afbeeldingen/Trein.jpg'); background-size: cover; background-position: center;">
+</div>
+
+<!-- Tekst onder de afbeelding, links uitgelijnd -->
+<div class="px-[5%] py-8 max-w-full text-left">
+  <h1 class="text-3xl font-bold mb-2">Projectdocumentatie week 8</h1>
+  <h2 class="text-[15pt] font-normal ml-1 mt-2">Klik op een week om de inhoud te bekijken</h2>
+</div>
+
+<!-- Week-links -->
+<div class="px-[5%] py-5 mt-[-10] max-w-full">
+  <ul class="flex flex-wrap gap-4 list-none p-0 m-0">
+    <li><a href="Week 1.html" class="inline-block px-8 py-3 bg-black text-white font-bold text-lg rounded-full shadow-lg hover:bg-gray-800 hover:shadow-xl transition-all duration-300 ease-in-out text-left">Week 1</a></li>
+    <li><a href="Week 2.html" class="inline-block px-8 py-3 bg-black text-white font-bold text-lg rounded-full shadow-lg hover:bg-gray-800 hover:shadow-xl transition-all duration-300 ease-in-out text-left">Week 2</a></li>
+    <li><a href="Week 3.html" class="inline-block px-8 py-3 bg-black text-white font-bold text-lg rounded-full shadow-lg hover:bg-gray-800 hover:shadow-xl transition-all duration-300 ease-in-out text-left">Week 3</a></li>
+    <li><a href="Week 4.html" class="inline-block px-8 py-3 bg-black text-white font-bold text-lg rounded-full shadow-lg hover:bg-gray-800 hover:shadow-xl transition-all duration-300 ease-in-out text-left">Week 4</a></li>
+    <li><a href="Week 5.html" class="inline-block px-8 py-3 bg-black text-white font-bold text-lg rounded-full shadow-lg hover:bg-gray-800 hover:shadow-xl transition-all duration-300 ease-in-out text-left">Week 5</a></li>
+    <li><a href="Week 6.html" class="inline-block px-8 py-3 bg-black text-white font-bold text-lg rounded-full shadow-lg hover:bg-gray-800 hover:shadow-xl transition-all duration-300 ease-in-out text-left">Week 6</a></li>
+    <li><a href="Week 7.html" class="inline-block px-8 py-3 bg-black text-white font-bold text-lg rounded-full shadow-lg hover:bg-gray-800 hover:shadow-xl transition-all duration-300 ease-in-out text-left">Week 7</a></li>
+    <li><a href="Week 8.html" class="inline-block px-8 py-3 bg-black text-white font-bold text-lg rounded-full shadow-lg hover:bg-gray-800 hover:shadow-xl transition-all duration-300 ease-in-out text-left">Week 8</a></li>
+    <li><a href="home.html" class="ml-auto inline-block px-8 py-3 bg-black text-white font-bold text-lg rounded-full shadow-lg hover:bg-gray-800 hover:shadow-xl transition-all duration-300 ease-in-out text-left">Home</a></li>
+  </ul>
+</div>
+
+<!-- Tekst-opdracht: GSM schermen en Tailwind installatie -->
+<div class="px-[5%] py-8 max-w-full text-left">
+
+  <h3 class="text-lg font-bold mb-2">GSM schermen en tailwind installatie</h3>
+
+  <h4 class="text-base font-bold mb-1">Deel 1 van de les:</h4>
+  <p class="text-base mb-4">
+    Bij het eerste deel van de les kregen we een verduidelijking over wat de volgende stap in Figma zou zijn.<br>
+    Tijdens deze les moesten we onze schermen omzetten naar een gsm-formaat. Het was belangrijk dat alle informatie die oorspronkelijk op de borden stond, ook netjes in de mobiele appversie zou passen.
+    Daardoor moesten we nadenken over de lay-out, de leesbaarheid en hoe we elementen anders konden schikken zodat alles nog logisch en gebruiksvriendelijk bleef.
+  </p>
+
+  <h4 class="text-base font-bold mb-1">Deel 2 van de les:</h4>
+  <p class="text-base mb-6">
+    In het tweede deel van de les installeerde ik Tailwind.<br>
+    Daarna kregen we de opdracht om onze vorige ontwerpdocumentatie over te zetten in een kopie van de indexpagina die hoort bij de Tailwind-installatie.
+  </p>
+
+  <!-- Prompt + Antwoord blok -->
+  <div class="my-8 p-4">
+
+    <h3 class="text-lg font-bold mb-2">Prompt die ik aan ChatGPT stelde:</h3>
+    <p class="text-base mb-4">
+      Kun je mijn HTML-code voor de afbeeldingen en tekst bekijken en aanpassen zodat:
+      <br>1) de afbeeldingen links uitgelijnd zijn met mijn tekst hierboven,
+      <br>2) alle items netjes in kolommen staan in Tailwind CSS,
+      <br>3) alle afbeeldingen dezelfde hoogte hebben, zodat het er consistent uitziet?
+    </p>
+
+    <h3 class="text-lg font-bold mt-4 mb-2">Antwoord van ChatGPT:</h3>
+    <p class="text-base mb-4">
+      Om je afbeeldingen netjes uit te lijnen met je tekst en consistent te maken in kolommen met Tailwind CSS, kun je het volgende doen:
+      <br><br>
+      1) <strong>Zet alle items in een grid container</strong> zoals <code>grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8</code> zodat ze automatisch netjes in kolommen komen.<br>
+      2) <strong>Zorg dat elke afbeelding dezelfde hoogte heeft</strong> met classes zoals <code>h-80</code> of <code>h-[hoogte]</code>.<br>
+      3) <strong>Gebruik flexbox</strong> in elk item zodat tekst en afbeelding samen links uitgelijnd blijven.
+    </p>
+
+    <pre class="bg-gray-100 p-3 rounded shadow overflow-x-auto text-sm">
+&lt;div class="flex flex-col gap-2 items-start"&gt;
+  &lt;img src="afbeeldingen/voorbeeld.jpeg" alt="Voorbeeld"
+       class="w-80 h-80 object-cover rounded-lg shadow"&gt;
+  &lt;h4 class="font-semibold text-base"&gt;Titel afbeelding&lt;/h4&gt;
+  &lt;p&gt;Korte beschrijving van de afbeelding.&lt;/p&gt;
+&lt;/div&gt;
+    </pre>
+
+    <p class="text-base mt-4">
+      Herhaal dit voor alle items. Plaats de grid container rond alle items zodat alles netjes in kolommen staat en consistent is.
+    </p>
+  </div>
+
+   <h3 class="text-lg font-bold mb-2">Link Figma</h3>
+  <p class="text-base mb-4">
+    <a href="URL" class="text-blue-600 hover:underline">
+      https://www.figma.com/design/WjOtLFcvSMQyTzx24pB9YU/Lost-in-tra-i-nslation?node-id=0-1&p=f&t=CHfjbjWSs9lIko5M-0
+    </a>
+  </p>
+</div>
+
+</html>
